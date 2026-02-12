@@ -18,7 +18,7 @@ function startGame() {
     gameBoard.innerHTML = "";
 
 
-    var cardImages = images.slice(images);; // Duplicate images for pairs
+    var cardImages = images.slice(0);; // Duplicate images for pairs
     cardImages.sort(() => Math.random() - 0.5);
 
 for (var i = 0; i < cardImages.length; i++) {
@@ -127,6 +127,7 @@ function newGame() {
     startGame();
 }
 startGame() 
+
 
 
 
